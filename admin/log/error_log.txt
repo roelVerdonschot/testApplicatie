@@ -1,0 +1,14 @@
+[02-Nov-2013 11:58:41 Europe/Amsterdam] PHP Warning:  mysqli::mysqli(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/monipal/domains/monipal.com/public_html/beta/inc/dbhandler.class.php on line 14
+[02-Nov-2013 11:58:41 Europe/Amsterdam] PHP Warning:  mysqli::mysqli(): [2002] php_network_getaddresses: getaddrinfo failed: Name or service not known (trying to connect via tcp://localhost ls:3306) in /home/monipal/domains/monipal.com/public_html/beta/inc/dbhandler.class.php on line 14
+[02-Nov-2013 11:58:41 Europe/Amsterdam] PHP Warning:  mysqli::mysqli(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/monipal/domains/monipal.com/public_html/beta/inc/dbhandler.class.php on line 14
+[02-Nov-2013 11:58:41 Europe/Amsterdam] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/monipal/domains/monipal.com/public_html/beta/inc/dbhandler.class.php on line 15
+[02-Nov-2013 11:58:41 Europe/Amsterdam] 0
+[02-Nov-2013 11:58:41 Europe/Amsterdam] PHP Warning:  mysqli::prepare(): Couldn't fetch mysqli in /home/monipal/domains/monipal.com/public_html/beta/inc/dbhandler.class.php on line 209
+[02-Nov-2013 11:58:41 Europe/Amsterdam] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/monipal/domains/monipal.com/public_html/beta/inc/dbhandler.class.php on line 210
+[02-Nov-2013 11:59:53 Europe/Amsterdam] PHP Warning:  mysqli::mysqli(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/monipal/domains/monipal.com/public_html/beta/inc/dbhandler.class.php on line 14
+[02-Nov-2013 11:59:53 Europe/Amsterdam] PHP Warning:  mysqli::mysqli(): [2002] php_network_getaddresses: getaddrinfo failed: Name or service not known (trying to connect via tcp://localhost ls:3306) in /home/monipal/domains/monipal.com/public_html/beta/inc/dbhandler.class.php on line 14
+[02-Nov-2013 11:59:53 Europe/Amsterdam] PHP Warning:  mysqli::mysqli(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/monipal/domains/monipal.com/public_html/beta/inc/dbhandler.class.php on line 14
+[02-Nov-2013 11:59:53 Europe/Amsterdam] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/monipal/domains/monipal.com/public_html/beta/inc/dbhandler.class.php on line 15
+[02-Nov-2013 11:59:53 Europe/Amsterdam] 0
+[02-Nov-2013 11:59:53 Europe/Amsterdam] PHP Warning:  mysqli::prepare(): Couldn't fetch mysqli in /home/monipal/domains/monipal.com/public_html/beta/inc/dbhandler.class.php on line 209
+[02-Nov-2013 11:59:53 Europe/Amsterdam] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/monipal/domains/monipal.com/public_html/beta/inc/dbhandler.class.php on line 210

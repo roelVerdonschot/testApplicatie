@@ -1,0 +1,17 @@
+[02-Nov-2013 12:23:15 Europe/Amsterdam] PHP Notice:  Undefined offset: 2 in /home/monipal/domains/monipal.com/public_html/beta/inc/logbook.class.php on line 112
+[02-Nov-2013 12:23:15 Europe/Amsterdam] PHP Notice:  Undefined offset: 1 in /home/monipal/domains/monipal.com/public_html/beta/inc/logbook.class.php on line 112
+[02-Nov-2013 12:31:55 Europe/Amsterdam] PHP Notice:  Undefined index: NO_DINNER_COST_DESC in /home/monipal/domains/monipal.com/public_html/beta/cost.php on line 55
+[02-Nov-2013 12:31:56 Europe/Amsterdam] PHP Notice:  Undefined variable: uid in /home/monipal/domains/monipal.com/public_html/beta/cost.php on line 60
+[02-Nov-2013 12:31:56 Europe/Amsterdam] PHP Notice:  Undefined variable: uid in /home/monipal/domains/monipal.com/public_html/beta/cost.php on line 117
+[02-Nov-2013 12:31:56 Europe/Amsterdam] PHP Notice:  Undefined variable: uid in /home/monipal/domains/monipal.com/public_html/beta/cost.php on line 119
+[02-Nov-2013 12:34:54 Europe/Amsterdam] PHP Notice:  Undefined index: NO_DINNER_COST_DESC in /home/monipal/domains/monipal.com/public_html/beta/cost.php on line 55
+[02-Nov-2013 12:34:54 Europe/Amsterdam] PHP Notice:  Undefined variable: uid in /home/monipal/domains/monipal.com/public_html/beta/cost.php on line 60
+[02-Nov-2013 12:34:54 Europe/Amsterdam] PHP Notice:  Undefined variable: uid in /home/monipal/domains/monipal.com/public_html/beta/cost.php on line 117
+[02-Nov-2013 12:34:54 Europe/Amsterdam] PHP Notice:  Undefined variable: uid in /home/monipal/domains/monipal.com/public_html/beta/cost.php on line 119
+[02-Nov-2013 12:36:01 Europe/Amsterdam] PHP Notice:  Undefined variable: uid in /home/monipal/domains/monipal.com/public_html/beta/cost.php on line 117
+[02-Nov-2013 12:36:01 Europe/Amsterdam] PHP Notice:  Undefined variable: uid in /home/monipal/domains/monipal.com/public_html/beta/cost.php on line 119
+[02-Nov-2013 12:36:04 Europe/Amsterdam] PHP Notice:  Undefined variable: uid in /home/monipal/domains/monipal.com/public_html/beta/cost.php on line 117
+[02-Nov-2013 12:36:04 Europe/Amsterdam] PHP Notice:  Undefined variable: uid in /home/monipal/domains/monipal.com/public_html/beta/cost.php on line 119
+[02-Nov-2013 12:37:46 Europe/Amsterdam] PHP Notice:  Undefined index: NO_DINNER_COST_DESC in /home/monipal/domains/monipal.com/public_html/beta/cost.php on line 56
+[02-Nov-2013 12:37:59 Europe/Amsterdam] PHP Notice:  Undefined index: NO_DINNER_COST_DESC in /home/monipal/domains/monipal.com/public_html/beta/cost.php on line 56
+[02-Nov-2013 12:38:05 Europe/Amsterdam] PHP Notice:  Undefined index: NO_DINNER_COST_DESC in /home/monipal/domains/monipal.com/public_html/beta/cost.php on line 56

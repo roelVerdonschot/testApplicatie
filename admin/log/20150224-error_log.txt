@@ -1,0 +1,42 @@
+[24-Feb-2015 19:37:58 Europe/Amsterdam] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'monipal_beta' in D:\Monipal\public_html\inc\dbhandler.class.php on line 13
+[24-Feb-2015 19:37:58 Europe/Amsterdam] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in D:\Monipal\public_html\inc\dbhandler.class.php on line 14
+[24-Feb-2015 19:37:58 Europe/Amsterdam] 0
+[24-Feb-2015 19:38:01 Europe/Amsterdam] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'monipal_beta' in D:\Monipal\public_html\inc\dbhandler.class.php on line 13
+[24-Feb-2015 19:38:01 Europe/Amsterdam] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in D:\Monipal\public_html\inc\dbhandler.class.php on line 14
+[24-Feb-2015 19:38:01 Europe/Amsterdam] 0
+[24-Feb-2015 19:38:01 Europe/Amsterdam] PHP Warning:  mysqli::prepare(): Couldn't fetch mysqli in D:\Monipal\public_html\inc\dbhandler.class.php on line 191
+[24-Feb-2015 19:38:01 Europe/Amsterdam] PHP Fatal error:  Call to a member function bind_param() on a non-object in D:\Monipal\public_html\inc\dbhandler.class.php on line 192
+[24-Feb-2015 19:38:07 Europe/Amsterdam] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'monipal_beta' in D:\Monipal\public_html\inc\dbhandler.class.php on line 13
+[24-Feb-2015 19:38:07 Europe/Amsterdam] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in D:\Monipal\public_html\inc\dbhandler.class.php on line 14
+[24-Feb-2015 19:38:07 Europe/Amsterdam] 0
+[24-Feb-2015 19:38:07 Europe/Amsterdam] PHP Warning:  mysqli::prepare(): Couldn't fetch mysqli in D:\Monipal\public_html\inc\dbhandler.class.php on line 191
+[24-Feb-2015 19:38:07 Europe/Amsterdam] PHP Fatal error:  Call to a member function bind_param() on a non-object in D:\Monipal\public_html\inc\dbhandler.class.php on line 192
+[24-Feb-2015 19:38:21 Europe/Amsterdam] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'monipal_beta' in D:\Monipal\public_html\inc\dbhandler.class.php on line 13
+[24-Feb-2015 19:38:21 Europe/Amsterdam] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in D:\Monipal\public_html\inc\dbhandler.class.php on line 14
+[24-Feb-2015 19:38:21 Europe/Amsterdam] 0
+[24-Feb-2015 19:38:24 Europe/Amsterdam] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'monipal_beta' in D:\Monipal\public_html\inc\dbhandler.class.php on line 13
+[24-Feb-2015 19:38:24 Europe/Amsterdam] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in D:\Monipal\public_html\inc\dbhandler.class.php on line 14
+[24-Feb-2015 19:38:24 Europe/Amsterdam] 0
+[24-Feb-2015 19:38:26 Europe/Amsterdam] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'monipal_beta' in D:\Monipal\public_html\inc\dbhandler.class.php on line 13
+[24-Feb-2015 19:38:26 Europe/Amsterdam] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in D:\Monipal\public_html\inc\dbhandler.class.php on line 14
+[24-Feb-2015 19:38:26 Europe/Amsterdam] 0
+[24-Feb-2015 19:38:27 Europe/Amsterdam] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'monipal_beta' in D:\Monipal\public_html\inc\dbhandler.class.php on line 13
+[24-Feb-2015 19:38:27 Europe/Amsterdam] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in D:\Monipal\public_html\inc\dbhandler.class.php on line 14
+[24-Feb-2015 19:38:27 Europe/Amsterdam] 0
+[24-Feb-2015 19:38:27 Europe/Amsterdam] PHP Warning:  mysqli::prepare(): Couldn't fetch mysqli in D:\Monipal\public_html\inc\dbhandler.class.php on line 191
+[24-Feb-2015 19:38:27 Europe/Amsterdam] PHP Fatal error:  Call to a member function bind_param() on a non-object in D:\Monipal\public_html\inc\dbhandler.class.php on line 192
+[24-Feb-2015 19:39:47 Europe/Amsterdam] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'monipal_beta' in D:\Monipal\public_html\inc\dbhandler.class.php on line 13
+[24-Feb-2015 19:39:47 Europe/Amsterdam] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in D:\Monipal\public_html\inc\dbhandler.class.php on line 14
+[24-Feb-2015 19:39:47 Europe/Amsterdam] 0
+[24-Feb-2015 19:39:47 Europe/Amsterdam] PHP Warning:  mysqli::prepare(): Couldn't fetch mysqli in D:\Monipal\public_html\inc\dbhandler.class.php on line 191
+[24-Feb-2015 19:39:47 Europe/Amsterdam] PHP Fatal error:  Call to a member function bind_param() on a non-object in D:\Monipal\public_html\inc\dbhandler.class.php on line 192
+[24-Feb-2015 19:39:49 Europe/Amsterdam] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'monipal_beta' in D:\Monipal\public_html\inc\dbhandler.class.php on line 13
+[24-Feb-2015 19:39:49 Europe/Amsterdam] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in D:\Monipal\public_html\inc\dbhandler.class.php on line 14
+[24-Feb-2015 19:39:49 Europe/Amsterdam] 0
+[24-Feb-2015 19:39:49 Europe/Amsterdam] PHP Warning:  mysqli::prepare(): Couldn't fetch mysqli in D:\Monipal\public_html\inc\dbhandler.class.php on line 191
+[24-Feb-2015 19:39:49 Europe/Amsterdam] PHP Fatal error:  Call to a member function bind_param() on a non-object in D:\Monipal\public_html\inc\dbhandler.class.php on line 192
+[24-Feb-2015 19:39:56 Europe/Amsterdam] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'monipal_beta' in D:\Monipal\public_html\inc\dbhandler.class.php on line 13
+[24-Feb-2015 19:39:56 Europe/Amsterdam] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in D:\Monipal\public_html\inc\dbhandler.class.php on line 14
+[24-Feb-2015 19:39:56 Europe/Amsterdam] 0
+[24-Feb-2015 19:39:56 Europe/Amsterdam] PHP Warning:  mysqli::prepare(): Couldn't fetch mysqli in D:\Monipal\public_html\inc\dbhandler.class.php on line 191
+[24-Feb-2015 19:39:56 Europe/Amsterdam] PHP Fatal error:  Call to a member function bind_param() on a non-object in D:\Monipal\public_html\inc\dbhandler.class.php on line 192

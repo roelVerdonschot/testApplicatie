@@ -1,0 +1,10 @@
+[11-Mar-2014 07:39:55 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in C:\Users\Arwin\Documents\Site\HeavyPanther\public_html\inc\dbhandler.class.php on line 3320
+[11-Mar-2014 07:41:40 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in C:\Users\Arwin\Documents\Site\HeavyPanther\public_html\inc\dbhandler.class.php on line 3350
+[11-Mar-2014 08:05:04 UTC] PHP Notice:  Undefined property: User_Cost::$guests in C:\Users\Arwin\Documents\Site\HeavyPanther\public_html\demo-cost-management.php on line 166
+[11-Mar-2014 08:05:04 UTC] PHP Notice:  Undefined property: User_Cost::$guests in C:\Users\Arwin\Documents\Site\HeavyPanther\public_html\demo-cost-management.php on line 166
+[11-Mar-2014 08:05:04 UTC] PHP Notice:  Undefined property: User_Cost::$guests in C:\Users\Arwin\Documents\Site\HeavyPanther\public_html\demo-cost-management.php on line 166
+[11-Mar-2014 08:05:04 UTC] PHP Notice:  Undefined property: User_Cost::$guests in C:\Users\Arwin\Documents\Site\HeavyPanther\public_html\demo-cost-management.php on line 166
+[11-Mar-2014 08:05:05 UTC] PHP Notice:  Undefined property: User_Cost::$guests in C:\Users\Arwin\Documents\Site\HeavyPanther\public_html\demo-cost-management.php on line 166
+[11-Mar-2014 08:05:05 UTC] PHP Notice:  Undefined property: User_Cost::$guests in C:\Users\Arwin\Documents\Site\HeavyPanther\public_html\demo-cost-management.php on line 166
+[11-Mar-2014 08:05:05 UTC] PHP Notice:  Undefined property: User_Cost::$guests in C:\Users\Arwin\Documents\Site\HeavyPanther\public_html\demo-cost-management.php on line 166
+[11-Mar-2014 08:05:05 UTC] PHP Notice:  Undefined property: User_Cost::$guests in C:\Users\Arwin\Documents\Site\HeavyPanther\public_html\demo-cost-management.php on line 166
