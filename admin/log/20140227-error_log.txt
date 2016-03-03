@@ -1,8 +1,0 @@
-[27-Feb-2014 21:25:08 UTC] PHP Notice:  Undefined property: User_Cost::$guests in C:\Users\Arwin\Documents\Site\HeavyPanther\public_html\demo-cost-management.php on line 166
-[27-Feb-2014 21:25:08 UTC] PHP Notice:  Undefined property: User_Cost::$guests in C:\Users\Arwin\Documents\Site\HeavyPanther\public_html\demo-cost-management.php on line 166
-[27-Feb-2014 21:25:08 UTC] PHP Notice:  Undefined property: User_Cost::$guests in C:\Users\Arwin\Documents\Site\HeavyPanther\public_html\demo-cost-management.php on line 166
-[27-Feb-2014 21:25:08 UTC] PHP Notice:  Undefined property: User_Cost::$guests in C:\Users\Arwin\Documents\Site\HeavyPanther\public_html\demo-cost-management.php on line 166
-[27-Feb-2014 21:25:08 UTC] PHP Notice:  Undefined property: User_Cost::$guests in C:\Users\Arwin\Documents\Site\HeavyPanther\public_html\demo-cost-management.php on line 166
-[27-Feb-2014 21:25:08 UTC] PHP Notice:  Undefined property: User_Cost::$guests in C:\Users\Arwin\Documents\Site\HeavyPanther\public_html\demo-cost-management.php on line 166
-[27-Feb-2014 21:25:08 UTC] PHP Notice:  Undefined property: User_Cost::$guests in C:\Users\Arwin\Documents\Site\HeavyPanther\public_html\demo-cost-management.php on line 166
-[27-Feb-2014 21:25:08 UTC] PHP Notice:  Undefined property: User_Cost::$guests in C:\Users\Arwin\Documents\Site\HeavyPanther\public_html\demo-cost-management.php on line 166
