@@ -1,0 +1,14 @@
+[10-Mar-2014 22:08:30 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in C:\Users\Arwin\Documents\Site\HeavyPanther\public_html\inc\dbhandler.class.php on line 3350
+[10-Mar-2014 22:11:14 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in C:\Users\Arwin\Documents\Site\HeavyPanther\public_html\inc\dbhandler.class.php on line 3350
+[10-Mar-2014 22:12:58 UTC] PHP Notice:  Undefined index: PRIVACY in C:\Users\Arwin\Documents\Site\HeavyPanther\public_html\inc\footer.inc.php on line 7
+[10-Mar-2014 22:12:58 UTC] PHP Notice:  Undefined index: COOKIES in C:\Users\Arwin\Documents\Site\HeavyPanther\public_html\inc\footer.inc.php on line 7
+[10-Mar-2014 22:13:58 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in C:\Users\Arwin\Documents\Site\HeavyPanther\public_html\inc\dbhandler.class.php on line 3320
+[10-Mar-2014 22:18:05 UTC] PHP Parse error:  syntax error, unexpected '{' in C:\Users\Arwin\Documents\Site\HeavyPanther\public_html\inc\header.inc.php on line 113
+[10-Mar-2014 22:25:04 UTC] PHP Notice:  Undefined variable: _no_header in C:\Users\Arwin\Documents\Site\HeavyPanther\public_html\inc\header.inc.php on line 112
+[10-Mar-2014 22:25:04 UTC] PHP Notice:  Undefined variable: _no_footer in C:\Users\Arwin\Documents\Site\HeavyPanther\public_html\inc\footer.inc.php on line 2
+[10-Mar-2014 22:29:52 UTC] PHP Notice:  Undefined variable: group in C:\Users\Arwin\Documents\Site\HeavyPanther\public_html\inc\header.inc.php on line 168
+[10-Mar-2014 22:29:52 UTC] PHP Fatal error:  Call to a member function CheckCost() on a non-object in C:\Users\Arwin\Documents\Site\HeavyPanther\public_html\inc\header.inc.php on line 168
+[10-Mar-2014 22:33:51 UTC] PHP Notice:  Object of class Group could not be converted to int in C:\Users\Arwin\Documents\Site\HeavyPanther\public_html\inc\header.inc.php on line 168
+[10-Mar-2014 22:40:09 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in C:\Users\Arwin\Documents\Site\HeavyPanther\public_html\inc\dbhandler.class.php on line 3320
+[10-Mar-2014 22:40:35 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in C:\Users\Arwin\Documents\Site\HeavyPanther\public_html\inc\dbhandler.class.php on line 3320
+[10-Mar-2014 22:42:33 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in C:\Users\Arwin\Documents\Site\HeavyPanther\public_html\inc\dbhandler.class.php on line 3320

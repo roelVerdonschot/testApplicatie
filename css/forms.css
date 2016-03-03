@@ -1,0 +1,255 @@
+form {
+    clear:both;
+}
+form span {
+    margin: 0px 15px 10px 0px;
+    float:left;
+}
+form span.clear {
+    clear:both;
+}
+
+form span label {
+    margin: 0;
+    padding-top: 3px;
+    clear: both;
+    display: block;
+}
+
+form span span {
+    font-weight: bold;
+    margin: 0;
+    float:none;
+}
+
+form span.req {
+    float:none;
+    clear:none;
+}
+
+form span label.choice
+{
+    clear: none;
+    float:left;
+}
+
+form span select {
+    border:2px solid #777777;
+    padding:4px 5px 4px 5px;
+    width: 214px;
+	border-radius:4px;
+}
+.dinner-cost select {
+    width: 100px;
+}
+
+form span input[type=checkbox] {
+    border:none;
+    margin:7px 10px 5px 5px;
+    width: auto;
+    float:left;
+}
+
+form span input[type=submit] {
+    color:#fff;
+    border:none;
+    min-width: 100px;
+    height: 35px;
+}
+
+input[type=button] {
+    background-color: #aaa;
+    color:#fff;
+    border:none;
+    min-width: 100px;
+    height: 35px;
+}
+
+input[type=button].cancel_btn {
+    margin-left: 5px;
+}
+form span input[type=text],form span input[type=password]
+{
+    width: 200px;
+}
+form span input[type=email]
+{
+    width: 220px;
+}
+form span input[type=email].s200
+{
+    width: 200px;
+}
+form span input[type=text].amount
+{
+    width: 85px;	
+	height: 35px;
+}
+form span input[type=text].description-dinner-cost
+{
+    width: 175px;
+	height:35px;
+}
+form span input[type=text].s140
+{
+    width: 140px;
+}
+.stickynote form span input[type=text]
+{
+    width: 186px;
+}
+.stickynote form span textarea
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border:2px solid #aaaca6;
+    padding:5px 5px 5px 5px;
+    width: 200px;
+}
+.stickynote form span input[type=submit] {
+     width: 200px;
+ }
+#add-stickynote form span input[type="submit"] {
+    background-color: #ffffff !important;
+    color: #e14b41;
+}
+form span.right-bottom {
+    position: absolute;
+    right:0;
+    bottom:0;
+}
+
+#feedback-form
+{
+    color:#000 !important;
+}
+select.numbers {
+    width: 60px;
+    float:left;
+}
+
+.secundaire-btn
+{
+    background-color: #ef8a00 !important;
+    color:#fff !important;
+    border:none !important;
+    min-width: 100px !important;
+    height: 35px !important;
+}
+
+
+#login-box .btn {
+    float: left;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+/* Button */
+.btn, form span input[type=submit], form span input[type=button], form span button {
+    -moz-user-select: none;
+    background-image: none;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: normal;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+	font-family: 'Montserrat', sans-serif;
+    font-size: 0.8em;
+    padding: 10px 20px;
+    text-transform: uppercase;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+.btn-red, form span input[type=submit]{
+	background-color:  #e14b41 !important;
+	color: #fff;
+}
+.btn-red:hover, form span input[type=submit]:hover{
+	background:	#fff;
+	color: #2f2f2f;
+	-webkit-transition: all 275ms;
+		-moz-transition: all 275ms;
+			-o-transition: all 275ms;
+}
+.btn-grey, form span input[type=button]{
+	background-color:  #777;
+	color: #fff;;
+}
+.btn-grey:hover, form span input[type=button]:hover {
+	background:	#505050;
+	color: #fff;
+	-webkit-transition: all 275ms;
+		-moz-transition: all 275ms;
+			-o-transition: all 275ms;
+}
+aside .box .btn {
+	width:100%;
+	margin-top: 10px;
+}
+.btn-white {
+	background-color: white;
+	color: #e14b41;;
+}
+.btn-white:hover{
+	background:	#505050;
+	color: #fff;
+	-webkit-transition: all 275ms;
+		-moz-transition: all 275ms;
+			-o-transition: all 275ms;
+}
+.btn-trans{
+	border: 2px solid white;
+	color: white;
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
+.btn-trans:hover{
+	background-color: white;
+	color: black;
+	-webkit-transition: all 275ms;
+		-moz-transition: all 275ms;
+			-o-transition: all 275ms;
+}
+
+
+.btn-lg {
+    border-radius: 6px;
+    font-size: 18px;
+    line-height: 1.33;
+    padding: 10px 16px;	
+	margin: 5px 5px 0 0;
+    line-height: 1.33;
+}
+
+.btn-grey {
+    background-color: #777777;
+    color: #FFFFFF;
+}
+
+input[type="email"], input[type="password"], input[type="text"] {
+    background-color: #FFFFFF;
+    border: 2px solid #777777;
+    color: #777777;
+    height: 50px;
+    /*margin-top: 20px;*/
+    padding: 4px 10px;
+    width: 300px;
+}
+input {
+    border-radius: 3px;
+}
+textarea {
+    background-color: #FFFFFF;
+    border: 2px solid #777777;
+    color: #777777;
+    height: 125px;
+    padding: 4px 10px;
+    width: 300px;
+	border-radius: 3px;
+}

@@ -1,0 +1,146 @@
+html {
+    background: url(../images/backgroundImage.jpg) no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body{
+    background-color: transparent;
+}
+
+
+h1{
+    font-size: 180%; /* 24 / 14 */
+    line-height: 1.6em; /* 21 / 14 */
+    padding-bottom:10px;
+    color:#ffffff;
+}
+
+h2.home-functions {
+    font-size: 230%; /* 21 / 14 */
+    line-height: 1.6em; /* 21 / 14 */
+    color:#ffffff;
+    float:left;
+}
+
+h3{
+    font-size: 120%; /* 24 / 14 */
+    line-height: 1.0em; /* 21 / 14 */
+    padding-bottom:10px;
+    color:#000;
+}
+
+#home-arrow {
+    background: url(../images/pijl-home.png) no-repeat top center;
+    height: 256px;
+    width: 221px;
+    margin-left:200px;
+    float: left;
+    margin-bottom:30px;
+    margin-top:15px;
+}
+aside.home-info {
+    width: 480px !important;
+    color:#ffffff;
+    margin-top:8px;
+}
+h2#new-group
+{
+    font-size: 280%;
+    color:#ffffff;
+    float:right;
+    padding-right: 25px;
+    margin-bottom: 20px;
+}
+
+h2#new-group a:link,
+h2#new-group a:active,
+h2#new-group a:visited {
+    color:#ffffff;
+    text-decoration: none;
+    padding-bottom: 6px;
+    border-bottom: 3px solid #fff;
+}
+h2#new-group a:hover
+{
+    border-bottom: none;
+}
+
+
+#home-buttons
+{
+    clear:both;
+}
+#home-buttons a:link,
+#home-buttons a:active,
+#home-buttons a:visited
+{
+    text-decoration: none;
+}
+
+.home-btn
+{
+    width: 300px;
+    height:146px;
+    margin-right:7px;
+    margin-left:7px;
+    float:left;
+}
+
+#btn-costs {
+    background: #ff0090 url(../images/costs-button.png) no-repeat 25px center;
+}
+#btn-costs.selected {
+
+}
+#btn-dinnerplanner {
+    background:#2d89ef url(../images/dinnerplanner-button.png) no-repeat 25px center;
+}
+#btn-dinnerplanner.selected {
+
+}
+#btn-tasklist {
+    background: #00a300 url(../images/tasklist-button.png) no-repeat 25px center;
+}
+#btn-tasklist.selected {
+
+}
+
+#btn-costs span,#btn-dinnerplanner span,#btn-tasklist span {
+    height: 150px;
+    color: #ffffff;
+    font-size: 40px;
+    line-height: 43px;
+    padding-left: 120px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+footer{
+    width:100%;
+    text-align: center;
+    /*border-top: 3px solid #004374;*/
+    height:48px;
+    /* Fallback for web browsers that don't support RGBa */
+    background-color: rgb(255, 255, 255);
+    /* RGBa with 0.6 opacity */
+    background-color: rgba(255, 255, 255, 0.6);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff, endColorstr=#99ffffff);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff, endColorstr=#99ffffff)";
+    color:#222;
+}
+footer p{
+    color:#222;
+    text-align: center;
+    font-size:80%;
+}
+
+footer a:link,
+footer a:active,
+footer a:visited {
+    color:#222;
+}

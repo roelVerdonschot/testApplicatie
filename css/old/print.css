@@ -1,0 +1,17 @@
+body {margin:0; padding:0; line-height: 1.4em; word-spacing:1px; letter-spacing:0.2px; font: 13px Arial, Helvetica,"Lucida Grande", serif; color: #000; background: white; }
+
+header, aside, footer, #slidebox, .push, aside.content, section.content p {display:none;}
+section.content h1:before {
+    content: "Monipal ";
+}
+aside {display:none !important;}
+#container {
+    float: none !important;
+    margin: 0 !important;
+    width: 100% !important;
+}
+section {
+    float: none !important;
+    margin: 0 !important;
+    width: 100% !important;
+}

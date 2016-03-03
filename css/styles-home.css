@@ -1,0 +1,114 @@
+
+a.home-btn:hover 
+{
+    color: #E14B41;
+}
+
+.home-btn
+{
+    clear: both;
+    float: left;
+    margin-bottom: 8px;
+    overflow: hidden;
+    width: 100%;
+}
+#btn-costs span,#btn-dinnerplanner span,#btn-tasklist span {
+    font-size: 100%;
+    line-height: 1.5em;
+	text-align: left;
+	display:block;
+}
+
+.rslides {
+  position: absolute;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  z-index:-100;
+}
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.rslides img {
+	border: 0 none;
+    display: block;
+    margin: 0 auto;
+    min-height: 455px;
+    min-width: 100%;
+    width: auto;	
+	/*float: left;*/
+}
+
+.header-left {
+    float: left;
+    width: 60%;
+}
+
+.header-left p {
+    color: #fff;
+    font-size: 1.5em;
+	text-shadow: 0px 0px 8px rgba(50, 50, 50, 1);
+}
+.header-left p.available {
+    margin: 0px;
+}
+.app-avialable {
+    margin-left: 12px;
+    margin-top: 1.5em;
+}
+ul.app-avialable {
+    margin: 0px;
+	padding: 0px;
+}
+.app-avialable li {
+    display: inline-block;
+    margin-right: 0.5em;
+}
+
+.app-avialable li a {
+    display: block;
+    height: 53px;
+    opacity: 0.6;
+    transition: all 0.5s ease 0s;
+    width: 53px;
+}
+.apple {
+    background: url("../images/bsprit.png") no-repeat scroll -1px 0 rgba(0, 0, 0, 0);
+}
+.and {
+    background: url("../images/bsprit.png") no-repeat scroll -69px 0 rgba(0, 0, 0, 0);
+}
+.win {
+    background: url("../images/bsprit.png") no-repeat scroll -136px 0 rgba(0, 0, 0, 0);
+}
+.header-right {
+    background: url("../images/iphone-home.png") no-repeat scroll 50% 12px rgba(0, 0, 0, 0);
+    float: right;
+    height: 443px;
+    width: 39%;
+	position: relative;	
+    text-align: center;
+}
+.header-right span
+{
+	bottom: 15px;
+    display: block;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+}
