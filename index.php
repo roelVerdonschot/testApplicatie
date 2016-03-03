@@ -1,223 +1,205 @@
 <?php
-ob_start();
-require_once("inc/config.inc.php");
-$DBObject = DBHandler::GetInstance(null);
-$_page_title = $lang['PAGENAME_INDEX'];
-$_page_description = $lang['DEFAULT_DESCRIPTION'];
-$_page_keywords = $lang['DEFAULT_KEYWORDS'];
 
-require_once("inc/header.inc.php");
+/*
+ *---------------------------------------------------------------
+ * APPLICATION ENVIRONMENT
+ *---------------------------------------------------------------
+ *
+ * You can load different configurations depending on your
+ * current environment. Setting the environment also influences
+ * things like logging and error reporting.
+ *
+ * This can be set to anything, but default usage is:
+ *
+ *     development
+ *     testing
+ *     production
+ *
+ * NOTE: If you change these, also change the error_reporting() code below
+ *
+ */
+	define('ENVIRONMENT', 'development');
+/*
+ *---------------------------------------------------------------
+ * ERROR REPORTING
+ *---------------------------------------------------------------
+ *
+ * Different environments will require different levels of error reporting.
+ * By default development will show errors but testing and live will hide them.
+ */
 
-if(!Authentication_Controller::IsAuthenticated()) {
-?>
-<div class="splash-container">
-	<ul class="rslides">
-	  <li><img src="<?php echo $settings['site_url']; ?>images/slider.jpg" alt=""></li>
-	  <li><img src="<?php echo $settings['site_url']; ?>images/slider2.jpg" alt=""></li>
-	  <li><img src="<?php echo $settings['site_url']; ?>images/slider3.jpg" alt=""></li>
-	</ul>
-    <div class="splash">
-		<!---Start-header----->		
-		<div class="wrap">
-			<div class="header-left">
-				<label> </label>					
-				<p>De tool voor al je gezamenlijke activiteiten</p>
-				<p>Demo:</p>
-				<div class="splash-head">
-				
-					<a href="<?php echo $settings['site_url'].$lang['_LANG_CODE']; ?>/demo-cost-management/" class="pure-button pure-button-primary home-btn" id="btn-costs"><span><i class="icon-euro"></i> <?php echo $lang['BTN_COST_INDEX'] ?></span></a>
-					<a href="<?php echo $settings['site_url'].$lang['_LANG_CODE']; ?>/demo-dinner-list/" class="pure-button pure-button-primary home-btn" id="btn-dinnerplanner"><span><i class="icon-restaurant"></i> <?php echo $lang['BTN_DINNER_INDEX'] ?></span></a>
-					<a href="<?php echo $settings['site_url'].$lang['_LANG_CODE']; ?>/demo-task-list/" class="pure-button pure-button-primary home-btn" id="btn-tasklist"><span><i class="icon-check"></i> <?php echo $lang['BTN_TASK_INDEX'] ?></span></a>
-				
-					
-				</div>
-				<p class="available"><small>Inclusief de gratis mobiele app voor:</small></p>
-				<ul class="app-avialable">
-					<li><a class="apple" href="<?php echo $settings['site_url'].$lang['_LANG_CODE']; ?>/apps/"> </a></li>
-					<li><a class="and" href="<?php echo $settings['site_url'].$lang['_LANG_CODE']; ?>/apps/"> </a></li>
-					<li><a class="win" href="<?php echo $settings['site_url'].$lang['_LANG_CODE']; ?>/apps/"> </a></li>
-					<div class="clear"> </div>
-				</ul>
-			</div>
-			<div class="header-right">
-				<span><a href="<?php echo $settings['site_url'].$lang['_LANG_CODE']; ?>/register/" class="pure-button pure-button-primary">Maak nu een account!</a></span>
-			</div>
-			<div class="clear"> </div>
-		</div>
-		<!---End-header----->		
-    </div>
-</div>
-
-
+if (defined('ENVIRONMENT'))
+{
+	switch (ENVIRONMENT)
+	{
+		case 'development':
+			error_reporting(E_ALL);
+		break;
 	
-<section id="phone" style="display:none;">	        
-	<form method="post" action="http://www.monipal.com/nl/login/">
-		<fieldset>			
-			<input type="text" name="username" placeholder="Email" />
-			<input type="password" name="password" placeholder="Wachtwoord" />
-			<a href="http://www.monipal.com/nl/reset-password/">Wachtwoord vergeten?</a>
-			<a href="register.php.html">Register</a>
-			<input type="submit" value="login" class="btn btn-red" />
-		</fieldset>
-	</form>
-</section>
-	
-<div class="content-wrapper" id="info">
-    <div class="content">
-        <h2 class="content-head is-center">Hoe werkt het?</h2>
-		<p class="is-center">Op Monipal.com kun je online lijsten bijhouden van je gezamenlijke activiteiten. <br />Iedere groep kan zelf kiezen welke gezamelijke functies ze gebruiken op de website.</p>
+		case 'testing':
+		case 'production':
+			error_reporting(0);
+		break;
 
-        <div class="pure-g">
-            <div class="l-box pure-u-1-3 boxbg">
-
-                <h3 class="content-subhead">
-                    <i class="icon-euro"></i>
-                    Kostenbeheer
-                </h3>
-                <p>
-                    Hier worden alle uitgaven voor de groep verrekend en in een oogopslag kun jij zien wat de balans is tussen alle groepsleden.
-                    Heb je samen gekookt, heb je huishoudelijke artikelen gekocht zoals wc-papier of ben je bijvoorbeeld gaan stappen.
-                    Vul het in bij het kostenbeheer en het wordt automatisch over de groep verrekend.
-					<!--<br><br><a href="#" class="ml">> Kostenbeheer demo</a>-->
-                </p>
-            </div>
-            <div class="l-box pure-u-1-3 boxbg1">
-                <h3 class="content-subhead">
-                    <i class="icon-restaurant"></i>
-                    Eetlijst
-                </h3>
-                <p>
-                    Je kunt hier voor iedere gebruiker makkelijk aangeven of ze vanavond willen koken, mee eten of niet mee eten. Als je kookt kun je deze kosten na het koken makkelijk bij kostenbeheer invullen, deze worden daarna automatisch verdeeld over de groepsleden die mee aten.
-					<!--<br><br><a href="#" class="ml">> Eetlijst demo</a>-->
-                </p>
-            </div>
-            <div class="l-box pure-u-1-3 boxbg">
-                <h3 class="content-subhead">
-                    <i class="icon-check"></i>
-                    Takenlijst
-                </h3>
-                <p>
-                    Laat al je taken binnen de groep heel gemakkelijk verdelen over alle groepsleden via takenlijst. <br />
-					Heb je je taak aan het einde van de week nog niet uitgevoerd dan krijg je van ons een reminder zodat je nooit meer vergeet een taak te doen.
-					<!--<br><br><a href="#" class="ml">> Takenlijst demo</a>	-->				
-                </p>
-            </div>            
-        </div>
-		
-		<!--<h2 class="content-head is-center" id="access">Wil jij toegang?</h2>
-		<p class="is-center">Momenteel is het alleen mogelijk om op uitnodiging toegang te krijgen en met jou studentenhuis, sportteam of vriendengroep Monipal te gebruiken.<br />Vul hieronder je email adres in wel misschien krijg jij wel een uitnodiging!</p>
-		
-		<div class="pure-g is-center">
-            <div class="l-box pure-u-1">				
-				<form action="//monipal.us7.list-manage.com/subscribe/post?u=c86126b719e2bc789a7b8f012&amp;id=06daed3eda" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-					
-				<div class="mc-field-group">
-					<label for="mce-EMAIL">Emailadres </label>
-					<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" />
-					<input type="submit" value="Verstuur" name="subscribe" id="mc-embedded-subscribe" class="btn btn-red btn-lg" style="margin:0;" />
-				</div>
-					<div id="mce-responses" class="clear">
-						<div class="response" id="mce-error-response" style="display:none"></div>
-						<div class="response" id="mce-success-response" style="display:none"></div>
-					</div> 
-					<div style="position: absolute; left: -5000px;"><input type="text" name="b_c86126b719e2bc789a7b8f012_06daed3eda" tabindex="-1" value=""></div>
-				</form>
-			</div>
-		</div>
-		-->
-    </div>
-</div>
-<?php
-} else {
-	echo '<div class="normal-content">
-	<div class="pure-g">';
-    $user = Authentication_Controller::GetAuthenticatedUser();
-    $instant = new Group();
-    $myGroups = $instant->GetMyGroup($user->id);
-    if(count($myGroups) > 1){
-        echo '
-		<div class="l-box pure-u-3-4">
-        <h1> '.$lang['MY_GROUPS'].'</h1>
-        <table class="index-table">
-            <tr><th>'.$lang['GROUP'].'</th><th class="balance-column onepx">'.$lang['BALANCE'].'</th><th class="balance-column onepx">'.$lang['TODAY'].'</th><th class="onepx">'.$lang['TASK'].'</th></tr>'; //
-            $rowBack = 0 ;
-            foreach( $myGroups as $group )
-            {
-                echo '<tr><td '.($rowBack != 0 ? 'class="datacelltwo"' : '').'><a href="'.$settings['site_url'].'group/'.$group->id.'/"><h3>'.$group->name.'</h3></a>';
-                if($group->modules == 0){
-                    echo ' (<a href="'.$settings['site_url'].'settings-group/'.$group->id.'/">'.$lang['ACTIVATE_MODULES'].'</a>)';
-                }
-                echo '</td>'.'<td class="balance-column '.($rowBack != 0 ? ' datacelltwo' : '').'">';
-                if($group->CheckCost()){
-                    $saldo = $DBObject->GetUserSaldo($group->id,$user->id);
-                    echo '<a href="'.$settings['site_url'].'cost/'.$group->id.'/">'.($saldo >=  0 ? '<span class="txtPositive">' : '<span class="txtNegative">').$group->currency.' '.$saldo.'</span></a>';
-                } else { echo '-'; }
-                echo '</td>'.'<td class="balance-column '.($rowBack != 0 ? ' datacelltwo' : '').'">';
-                if($group->CheckDinner()){
-                    $group->ShowDinnerByUserDate($group,$user);
-                } else { echo '<a href="'.$settings['site_url'].'dinner/'.$group->id.'/" class="nothingimg">&nbsp;</a>'; }
-                echo '</td>'.'<td '.($rowBack != 0 ? 'class="datacelltwo"' : '').'>';
-                if($group->CheckTask()){
-                    $mondaydate = date('Y-m-d', strtotime('last Monday + 0 week'));
-                    $usertasks = $group->getUserTasksByWeek($mondaydate);
-                    if(isset($usertasks[$user->id])){
-                        echo '<a href="'.$settings['site_url'].'tasks/'.$group->id.'/"><span class="txtPositive">'.$usertasks[$user->id]->name.'</span></a>';
-                    }
-                    else{
-                        echo '<a href="'.$settings['site_url'].'tasks/'.$group->id.'/"><span class="txtNegative">'.$group->GetTaskByUserWeek($user->id).'</span></a>';
-                    }
-                } else { echo '-'; }
-                if($rowBack == 0){
-                    $rowBack = 1;
-                }
-                else{
-                    $rowBack = 0;
-                }
-                echo '</td></tr>';
-            }
-            ?>
-        </table>
-        </div>
-
-        <aside class="l-box pure-u-1-4">
-            <div class="box">
-                <p><?php echo $lang['NEW_FREE_GROUP'].'</p>
-                <a href="'.$settings['site_url'].'new-group/" class="btn btn-white">'.$lang['NEW_GROUP'].'</a>';
-				if($user->surname == null || $user->address == null || $user->zipcode == null || $user->city == null){
-					echo '<a href="'.$settings['site_url'].'settings/" class="btn btn-white">'.$lang['UPDATE_ACCOUNT'].'</a>';
-				}
-				?>
-			</div>
-        </aside>
-    <?php
-    }
-    else if(COUNT($myGroups) == 1){
-        header ('Location: '.$settings['site_url'].'group/'.$myGroups[0]->id.'/');
-    }
-    else if(COUNT($myGroups) == 0){
-
-        echo '<div class="l-box pure-u-3-4">
-            <h1>'.$lang['WELCOME'].' '.$user->firstName.'</h1>
-            <p>'.$lang['CHOOSE_OPTIONS'].' <br />
-             <a href="'.$settings['site_url'].'settings/">'.$lang['EDIT_ACCOUNT_NO_GROUPS'].'</a></p>
-
-
-        </div>
-        <aside class="l-box pure-u-1-4">
-            <div class="box">
-                <p>'.$lang['NEW_FREE_GROUP'].'</p>
-                <a href="'.$settings['site_url'].'new-group/" class="btn btn-white">'.$lang['NEW_GROUP'].'</a>';
-        if($user->surname == null || $user->address == null || $user->zipcode == null || $user->city == null){
-            echo ' <a href="'.$settings['site_url'].'settings/" class="btn btn-white">'.$lang['UPDATE_ACCOUNT'].'</a>';
-        }
-
-            echo '</div>
-        </aside>';
-    }
-	echo '	</div>
-</div>';
-
+		default:
+			exit('The application environment is not set correctly.');
+	}
 }
 
-require_once("inc/footer.inc.php");
-?>
+/*
+ *---------------------------------------------------------------
+ * SYSTEM FOLDER NAME
+ *---------------------------------------------------------------
+ *
+ * This variable must contain the name of your "system" folder.
+ * Include the path if the folder is not in the same  directory
+ * as this file.
+ *
+ */
+	$system_path = 'system';
+
+/*
+ *---------------------------------------------------------------
+ * APPLICATION FOLDER NAME
+ *---------------------------------------------------------------
+ *
+ * If you want this front controller to use a different "application"
+ * folder then the default one you can set its name here. The folder
+ * can also be renamed or relocated anywhere on your server.  If
+ * you do, use a full server path. For more info please see the user guide:
+ * http://codeigniter.com/user_guide/general/managing_apps.html
+ *
+ * NO TRAILING SLASH!
+ *
+ */
+	$application_folder = 'application';
+
+/*
+ * --------------------------------------------------------------------
+ * DEFAULT CONTROLLER
+ * --------------------------------------------------------------------
+ *
+ * Normally you will set your default controller in the routes.php file.
+ * You can, however, force a custom routing by hard-coding a
+ * specific controller class/function here.  For most applications, you
+ * WILL NOT set your routing here, but it's an option for those
+ * special instances where you might want to override the standard
+ * routing in a specific front controller that shares a common CI installation.
+ *
+ * IMPORTANT:  If you set the routing here, NO OTHER controller will be
+ * callable. In essence, this preference limits your application to ONE
+ * specific controller.  Leave the function name blank if you need
+ * to call functions dynamically via the URI.
+ *
+ * Un-comment the $routing array below to use this feature
+ *
+ */
+	// The directory name, relative to the "controllers" folder.  Leave blank
+	// if your controller is not in a sub-folder within the "controllers" folder
+	// $routing['directory'] = '';
+
+	// The controller class file name.  Example:  Mycontroller
+	// $routing['controller'] = '';
+
+	// The controller function you wish to be called.
+	// $routing['function']	= '';
+
+
+/*
+ * -------------------------------------------------------------------
+ *  CUSTOM CONFIG VALUES
+ * -------------------------------------------------------------------
+ *
+ * The $assign_to_config array below will be passed dynamically to the
+ * config class when initialized. This allows you to set custom config
+ * items or override any default config values found in the config.php file.
+ * This can be handy as it permits you to share one application between
+ * multiple front controller files, with each file containing different
+ * config values.
+ *
+ * Un-comment the $assign_to_config array below to use this feature
+ *
+ */
+	// $assign_to_config['name_of_config_item'] = 'value of config item';
+
+
+
+// --------------------------------------------------------------------
+// END OF USER CONFIGURABLE SETTINGS.  DO NOT EDIT BELOW THIS LINE
+// --------------------------------------------------------------------
+
+/*
+ * ---------------------------------------------------------------
+ *  Resolve the system path for increased reliability
+ * ---------------------------------------------------------------
+ */
+
+	// Set the current directory correctly for CLI requests
+	if (defined('STDIN'))
+	{
+		chdir(dirname(__FILE__));
+	}
+
+	if (realpath($system_path) !== FALSE)
+	{
+		$system_path = realpath($system_path).'/';
+	}
+
+	// ensure there's a trailing slash
+	$system_path = rtrim($system_path, '/').'/';
+
+	// Is the system path correct?
+	if ( ! is_dir($system_path))
+	{
+		exit("Your system folder path does not appear to be set correctly. Please open the following file and correct this: ".pathinfo(__FILE__, PATHINFO_BASENAME));
+	}
+
+/*
+ * -------------------------------------------------------------------
+ *  Now that we know the path, set the main path constants
+ * -------------------------------------------------------------------
+ */
+	// The name of THIS file
+	define('SELF', pathinfo(__FILE__, PATHINFO_BASENAME));
+
+	// The PHP file extension
+	// this global constant is deprecated.
+	define('EXT', '.php');
+
+	// Path to the system folder
+	define('BASEPATH', str_replace("\\", "/", $system_path));
+
+	// Path to the front controller (this file)
+	define('FCPATH', str_replace(SELF, '', __FILE__));
+
+	// Name of the "system folder"
+	define('SYSDIR', trim(strrchr(trim(BASEPATH, '/'), '/'), '/'));
+
+
+	// The path to the "application" folder
+	if (is_dir($application_folder))
+	{
+		define('APPPATH', $application_folder.'/');
+	}
+	else
+	{
+		if ( ! is_dir(BASEPATH.$application_folder.'/'))
+		{
+			exit("Your application folder path does not appear to be set correctly. Please open the following file and correct this: ".SELF);
+		}
+
+		define('APPPATH', BASEPATH.$application_folder.'/');
+	}
+
+/*
+ * --------------------------------------------------------------------
+ * LOAD THE BOOTSTRAP FILE
+ * --------------------------------------------------------------------
+ *
+ * And away we go...
+ *
+ */
+require_once BASEPATH.'core/CodeIgniter.php';
+
+/* End of file index.php */
+/* Location: ./index.php */

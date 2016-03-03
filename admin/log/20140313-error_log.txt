@@ -1,3 +1,0 @@
-[13-Mar-2014 12:39:27 UTC] PHP Notice:  Trying to get property of non-object in C:\Users\Arwin\Documents\Site\HeavyPanther\public_html\inc\group.class.php on line 203
-[13-Mar-2014 12:39:27 UTC] PHP Notice:  Trying to get property of non-object in C:\Users\Arwin\Documents\Site\HeavyPanther\public_html\inc\footer.inc.php on line 39
-[13-Mar-2014 13:12:21 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in C:\Users\Arwin\Documents\Site\HeavyPanther\public_html\inc\dbhandler.class.php on line 3320

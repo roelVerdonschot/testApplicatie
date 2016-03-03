@@ -1,2 +1,0 @@
-[14-Mar-2014 09:49:38 UTC] PHP Notice:  Trying to get property of non-object in C:\Users\Arwin\Documents\Site\HeavyPanther\public_html\inc\group.class.php on line 203
-[14-Mar-2014 09:49:38 UTC] PHP Notice:  Trying to get property of non-object in C:\Users\Arwin\Documents\Site\HeavyPanther\public_html\inc\footer.inc.php on line 39

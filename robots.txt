@@ -1,4 +1,2 @@
 User-agent: *
-Disallow: /inc/
-Disallow: /test/
-Disallow: /beta/
+Disallow: /
