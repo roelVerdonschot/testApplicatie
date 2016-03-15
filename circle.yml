@@ -8,6 +8,3 @@ machine:
 dependencies:
   override:
     - composer install --prefer-source --no-interaction --no-dev
-test:
-  override:
-    - vendor/bin/phpunit
