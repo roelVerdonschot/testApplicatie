@@ -1,4 +1,3 @@
-// circle.yml
 machine:
   php:
 	version: 5.4.21
