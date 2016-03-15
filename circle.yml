@@ -1,6 +1,13 @@
 machine:
+  timezone:
+     Europe/Amsterdam
   php:
-	version: 5.4.21
+    version: 5.4.21
+  hosts:
+    app.test: 127.0.0.1
 dependencies:
-  pre:
-	- echo "memory_limit = 1024M" > ~/.phpenv/versions/5.4.21/etc/conf.d/memory.ini
+  override:
+    - composer install --prefer-source --no-interaction --no-dev
+test:
+  override:
+    - vendor/bin/phpunit
