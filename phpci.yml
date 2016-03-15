@@ -20,8 +20,8 @@ setup:
     action: "install"
 
 test:
-  lint:
-    directory: "app/"
+#  lint: extreme slow
+#    directory: "app/"
   php_unit:
     config:
       - "phpunit.xml"
@@ -34,9 +34,9 @@ test:
         ignore:
             - "app/views"
         standard: "PSR1,PSR2"
-  php_cpd:
-    standard: "PSR2"
-    path: "app"
+#  php_cpd: could not find pgp_cpd
+#    standard: "PSR2"
+#    path: "app"
   php_mess_detector:
     path: 'app'
     ignore:
@@ -50,9 +50,11 @@ test:
       - "naming"
       - "unusedcode"
     zero_config: true
- php_docblock_checker:
-  technical_debt:
-    allowed_errors: -1
+# php_docblock_checker: extreme slow
+#  path: "app"
+#  allowed_warnings: 10
+#  skip_classes: true
+technical_debt:
 #complete:
 #    mysql:
 #        host: "localhost"
