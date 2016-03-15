@@ -1,6 +1,14 @@
 build_settings:
     verbose: true
+    mysql:
+        host: "localhost"
+        user: "root"
+        pass: "root"
 setup:
+  mysql:
+        - "DROP DATABASE IF EXISTS test;"
+        - "CREATE DATABASE test;"
+        - "GRANT ALL PRIVILEGES ON test.* TO test@'localhost' IDENTIFIED BY 'test';"
   env:
     APP_ENV: "testing"
     APP_DEBUG: "true"
@@ -18,7 +26,7 @@ test:
     config:
       - "phpunit.xml"
     directory:
-          - "app/tests/"
+      - "app/tests/"
   php_loc:
     directory: "app"
 #  php_code_sniffer:
@@ -46,3 +54,9 @@ test:
   php_docblock_checker:
   technical_debt:
     allowed_errors: -1
+complete:
+    mysql:
+        host: "localhost"
+        user: "root"
+        pass: "root"
+        - "DROP DATABASE IF EXISTS test;"
