@@ -21,7 +21,7 @@ setup:
 
 test:
   lint:
-        directory: "app/"
+    directory: "app/"
   php_unit:
     config:
       - "phpunit.xml"
@@ -49,7 +49,6 @@ test:
       - "design"
       - "naming"
       - "unusedcode"
-      - "somedir/customruleset.xml"
     zero_config: true
   php_docblock_checker:
   technical_debt:
