@@ -1,9 +1,9 @@
 setup:
   env:
-    TEST_DB_DB: "sss"
+    TEST_DB_DB: "testdb"
     TEST_DB_HOST: "127.0.0.1"
-    TEST_DB_USER: "sss"
-    TEST_DB_PWD: "sss"
+    TEST_DB_USER: "testuser"
+    TEST_DB_PWD: "password"
 
   composer:
     action: "install"
