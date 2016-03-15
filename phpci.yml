@@ -50,9 +50,9 @@ test:
       - "naming"
       - "unusedcode"
     zero_config: true
-  php_docblock_checker:
-  technical_debt:
-    allowed_errors: -1
+#  php_docblock_checker:
+#  technical_debt:
+#    allowed_errors: -1
 #complete:
 #    mysql:
 #        host: "localhost"
