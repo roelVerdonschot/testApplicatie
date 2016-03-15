@@ -16,3 +16,25 @@ test:
           - "app/tests/"
   php_loc:
     directory: "app"
+  php_code_sniffer:
+        path: "app"
+        ignore:
+            - "app/views"
+        standard: "PSR1,PSR2"
+  php_cpd:
+    standard: "PSR2"
+    path: "app"
+  php_mess_detector:
+    path: 'app'
+    ignore:
+      - 'vendor'
+    allowed_warnings: -1
+    rules:
+      - "cleancode"
+      - "controversial"
+      - "codesize"
+      - "design"
+      - "naming"
+      - "unusedcode"
+      - "somedir/customruleset.xml"
+    zero_config: true
