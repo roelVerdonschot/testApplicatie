@@ -1,14 +1,14 @@
 build_settings:
     verbose: true
-    mysql:
-        host: "localhost"
-        user: "root"
-        pass: "root"
+#    mysql:
+#        host: "localhost"
+#        user: "root"
+#        pass: "root"
 setup:
-  mysql:
-        - "DROP DATABASE IF EXISTS test;"
-        - "CREATE DATABASE test;"
-        - "GRANT ALL PRIVILEGES ON test.* TO test@'localhost' IDENTIFIED BY 'test';"
+#  mysql:
+#        - "DROP DATABASE IF EXISTS test;"
+#        - "CREATE DATABASE test;"
+#        - "GRANT ALL PRIVILEGES ON test.* TO test@'localhost' IDENTIFIED BY 'test';"
   env:
     APP_ENV: "testing"
     APP_DEBUG: "true"
@@ -54,9 +54,9 @@ test:
   php_docblock_checker:
   technical_debt:
     allowed_errors: -1
-complete:
-    mysql:
-        host: "localhost"
-        user: "root"
-        pass: "root"
-        - "DROP DATABASE IF EXISTS test;"
+#complete:
+#    mysql:
+#        host: "localhost"
+#        user: "root"
+#        pass: "root"
+#        - "DROP DATABASE IF EXISTS test;"
