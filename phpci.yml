@@ -1,7 +1,7 @@
 build_settings:
     verbose: true
     mysql:
-        host: "osboxes"
+        host: "localhost"
         user: "root"
         pass: "root"
 setup:
@@ -57,7 +57,7 @@ test:
 #technical_debt:
 complete:
     mysql:
-#        host: "osboxes"
+#        host: "localhost"
 #        user: "root"
 #        pass: "root"
         - "DROP DATABASE IF EXISTS test;"
