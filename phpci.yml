@@ -57,7 +57,7 @@ test:
 #technical_debt:
 complete:
     mysql:
-        host: "osboxes"
-        user: "root"
-        pass: "root"
+#        host: "osboxes"
+#        user: "root"
+#        pass: "root"
         - "DROP DATABASE IF EXISTS test;"
