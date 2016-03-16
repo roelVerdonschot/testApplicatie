@@ -8,7 +8,7 @@ setup:
   mysql:
         - "DROP DATABASE IF EXISTS test;"
         - "CREATE DATABASE test;"
-        - "GRANT ALL ON test.* TO 'tester' IDENTIFIED BY 'test';"
+        - "GRANT ALL PRIVILEGES ON test.* TO test@'localhost' IDENTIFIED BY 'test';"
   env:
     APP_ENV: "testing"
     APP_DEBUG: "true"
@@ -37,19 +37,19 @@ test:
 #  php_cpd: could not find pgp_cpd
 #    standard: "PSR2"
 #    path: "app"
-  php_mess_detector:
-    path: 'app'
-    ignore:
-      - 'vendor'
-    allowed_warnings: -1
-    rules:
-      - "cleancode"
-      - "controversial"
-      - "codesize"
-      - "design"
-      - "naming"
-      - "unusedcode"
-    zero_config: true
+#  php_mess_detector:
+#    path: 'app'
+#    ignore:
+#      - 'vendor'
+#    allowed_warnings: -1
+#    rules:
+#      - "cleancode"
+#      - "controversial"
+#      - "codesize"
+#      - "design"
+#      - "naming"
+#      - "unusedcode"
+#    zero_config: true
 # php_docblock_checker: extreme slow
 #  path: "app"
 #  allowed_warnings: 10
