@@ -15,4 +15,7 @@
             <directory>./app/tests/</directory>
         </testsuite>
     </testsuites>
+	<logging>
+		<log type="json" target="/tmp/logfile.json"/>
+	</logging>
 </phpunit>
