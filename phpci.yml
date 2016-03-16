@@ -1,14 +1,14 @@
 build_settings:
     verbose: true
-#    mysql:
-#        host: "localhost"
-#        user: "root"
-#        pass: "root"
+    mysql:
+        host: "osboxes"
+        user: "root"
+        pass: "root"
 setup:
-#  mysql:
-#        - "DROP DATABASE IF EXISTS test;"
-#        - "CREATE DATABASE test;"
-#        - "GRANT ALL PRIVILEGES ON test.* TO test@'localhost' IDENTIFIED BY 'test';"
+  mysql:
+        - "DROP DATABASE IF EXISTS test;"
+        - "CREATE DATABASE test;"
+        - "GRANT ALL ON test.* TO 'tester' IDENTIFIED BY 'test';"
   env:
     APP_ENV: "testing"
     APP_DEBUG: "true"
@@ -29,11 +29,11 @@ test:
       - "app/tests/"
   php_loc:
     directory: "app"
-  php_code_sniffer:
-        path: "app"
-        ignore:
-            - "app/views"
-        standard: "PSR1,PSR2"
+# php_code_sniffer: 
+#        path: "app"
+#        ignore:
+#            - "app/views"
+#        standard: "PSR1,PSR2"
 #  php_cpd: could not find pgp_cpd
 #    standard: "PSR2"
 #    path: "app"
@@ -54,10 +54,10 @@ test:
 #  path: "app"
 #  allowed_warnings: 10
 #  skip_classes: true
-technical_debt:
-#complete:
-#    mysql:
-#        host: "localhost"
-#        user: "root"
-#        pass: "root"
-#        - "DROP DATABASE IF EXISTS test;"
+#technical_debt:
+complete:
+    mysql:
+        host: "osboxes"
+        user: "root"
+        pass: "root"
+        - "DROP DATABASE IF EXISTS test;"
